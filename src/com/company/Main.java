@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] numbers = new int[]{1,2,3,4,5,6,8,9,10};
+        int[] numbers = new int[]{10,20,30,40,50,60,80,90,100};
 
         Scanner input = new Scanner(System.in);
         int target = input.nextInt();
@@ -16,12 +16,8 @@ public class Main {
     }
     public static int serchInsert(int[] numbers, int target) {
         int temp = 0;
-        int index = Arrays.binarySearch(numbers, target);
-        if(index < 0) {
-            temp = index;
-        }
-        for (int i = 0; i < numbers.length; i++)
-        {
+
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] < target) {
                 temp = i+1;
             }
