@@ -11,12 +11,11 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
         int target = input.nextInt();
-        System.out.println(serchInsert(numbers, target));
+        System.out.println(searchInsert(numbers, target));
 
     }
-    public static int serchInsert(int[] numbers, int target) {
+    public static int searchInsert(int[] numbers, int target) {
         int temp = 0;
-
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] < target) {
                 temp = i+1;
